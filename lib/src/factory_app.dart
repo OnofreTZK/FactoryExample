@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:afactory/src/button_screen.dart';
 
 class FactoryApp extends StatelessWidget {
 
@@ -8,15 +9,7 @@ class FactoryApp extends StatelessWidget {
   Widget build(BuildContext context){
     
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-            backgroundColor: Colors.purple,
-            title: const Text("Abstract Factory Example"),
-            centerTitle: true,
-        ), //AppBar
-        body: Text("Xubando"),
-        backgroundColor: Colors.purple[50],
-      ), // Scaffold
+      home: ButtonScreen(),      
       debugShowCheckedModeBanner: false,
     );
   }
