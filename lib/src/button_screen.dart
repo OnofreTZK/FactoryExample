@@ -25,7 +25,7 @@ class ButtonScreen extends StatelessWidget{
             padding: EdgeInsets.fromLTRB(
               MediaQuery.of(context).size.width * 0.01,
               MediaQuery.of(context).size.height * 0.01,
-              MediaQuery.of(context).size.width * 0.001,
+              MediaQuery.of(context).size.width * 0.01,
               MediaQuery.of(context).size.height * 0.01,
             ),
             child: Column(
