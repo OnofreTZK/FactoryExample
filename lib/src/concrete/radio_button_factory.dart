@@ -1,36 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:afactory/src/abstract/abstract_button_factory.dart';
+import 'package:afactory/src/abstract/abstract_radio_button.dart';
+import 'package:afactory/src/concrete/radio_button.dart';
 
 class RadioButtonFactory implements IButtonFactory {
    
     final String label;
+    IRadioButton button = RadioButtonImpl("init");
 
-    RadioButtonFactory(this.label);
+    RadioButtonFactory(this.label){
+        button = RadioButtonImpl(label);
+    }
 
     @override
     Widget createButton() {
-      return Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget> [ 
-          Radio<String>(
-            activeColor: Colors.purple,
-            toggleable: true,
-            autofocus: false,
-            value: "null",
-            groupValue: "null",
-            onChanged: (value) {
-              print("${label} => Radio Button");
-            },
-          ), // RadioButton
-          Text(
-            "Radio Button",
-            style: TextStyle(
-              color: Colors.purple[500],
-              fontSize: 16
-            ), // TextStyle
-          ), // Text
-        ], // <Widget>
-      ); // Container
+      return button.returnButton();
     }
-
 }
