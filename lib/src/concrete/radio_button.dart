@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:afactory/src/abstract/abstract_radio_button.dart';
+import 'package:afactory/src/abstract/abstract_button.dart';
 
-class RadioButtonImpl implements IRadioButton {
+class RadioButtonImpl implements IButton {
    
     final String label;
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
 
-abstract class IRadioButton {
+abstract class IButton {
   Widget returnButton();
 }

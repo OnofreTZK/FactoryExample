@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:afactory/src/abstract/abstract_button_factory.dart';
-import 'package:afactory/src/abstract/abstract_text_button.dart';
+import 'package:afactory/src/abstract/abstract_button.dart';
 
-class TextButtonImpl implements ITextButton {
+class TextButtonImpl implements IButton {
    
   final String label;
 
